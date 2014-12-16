@@ -36,7 +36,6 @@ DIRECTORY_ARCHIVES=$(DVDPLAYER_ARCHIVES) \
                    lib/libhts/libhts.a \
                    lib/libsquish/libsquish.a \
                    src/addons/addons.a \
-                   src/cdrip/cdrip.a \
                    src/cores/AudioEngine/audioengine.a \
                    src/cores/DllLoader/dllloader.a \
                    src/cores/DllLoader/exports/exports.a \
@@ -107,6 +106,9 @@ DIRECTORY_ARCHIVES=$(DVDPLAYER_ARCHIVES) \
 NWAOBJSXBMC=	src/threads/threads.a \
 		src/commons/commons.a
 
+ifeq (@USE_OPTICAL_DRIVE@,1)
+DIRECTORY_ARCHIVES += src/cdrip/cdrip.a 
+endif
 
 ifeq (@USE_WEB_SERVER@,1)
 DIRECTORY_ARCHIVES += src/network/httprequesthandler/httprequesthandlers.a
