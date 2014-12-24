@@ -552,6 +552,7 @@ lib/cpluff/stamp-h1
 /src/cores/playercorefactory/Makefile
 /src/cores/Makefile
 /src/cores/VideoRenderers/Makefile
+/src/cores/gstplayer/Makefile
 
 # /src/filesystem/
 /src/filesystem/Makefile

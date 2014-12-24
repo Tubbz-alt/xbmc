@@ -110,6 +110,10 @@ ifeq (@USE_OPTICAL_DRIVE@,1)
 DIRECTORY_ARCHIVES += src/cdrip/cdrip.a 
 endif
 
+ifeq (@USE_GSTREAMER@,1)
+DIRECTORY_ARCHIVES += src/cores/gstplayer/gstplayer.a 
+endif
+
 ifeq (@USE_WEB_SERVER@,1)
 DIRECTORY_ARCHIVES += src/network/httprequesthandler/httprequesthandlers.a
 endif
