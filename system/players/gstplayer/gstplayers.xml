@@ -1,0 +1,9 @@
+Unstaged changes after reset:
+M	Gstreamer-TODO.txt
+M	src/cores/gstplayer/GstPlayBinManager.cpp
+M	src/cores/gstplayer/GstPlayer.cpp
+M	src/cores/gstplayer/GstPlayer.h
+M	src/visualizations/Goom/goom2k4-0/mkinstalldirs
+M	src/visualizations/Goom/goom2k4-0/src/goomsl_lex.c
+D	system/gstplayers.xml
+M	system/players/gstplayer/gstplayers.xml
